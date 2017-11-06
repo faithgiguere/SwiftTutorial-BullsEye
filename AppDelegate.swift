@@ -2,9 +2,6 @@
 //  AppDelegate.swift
 //  BullsEye
 //
-//  Created by Faith Giguere on 10/31/17.
-//  Copyright © 2017 Faith Giguere. All rights reserved.
-//
 
 import UIKit
 

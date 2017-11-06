@@ -48,14 +48,14 @@ class ViewController: UIViewController {
 
     @IBAction func showAlert() {
         let difference = abs(targetValue - currentValue)
-        var points = 100 - difference
+        let points = 100 - difference
         score += points
         
         // Messages correspond with general accuracy of user's attempt
         let title: String
         if difference == 0 {
             title = "Perfect!"
-            points += 100
+            score += 100
         } else if difference < 5 {
             title = "You almost had it!"
         } else if difference < 10 {
