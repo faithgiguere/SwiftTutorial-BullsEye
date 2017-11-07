@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import QuartzCore
 
 class ViewController: UIViewController {
     var currentValue = 0 // Current value of the slider
@@ -101,6 +102,12 @@ class ViewController: UIViewController {
         score = 0
         round = 0
         startNewRound()
+        let transition = CATransition()
+        transition.type = kCATransitionFade
+        transition.duration = 1
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        
+        view.layer.add(transition, forKey: nil)
     }
 }
 
